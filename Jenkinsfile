@@ -1,10 +1,10 @@
 node {
     def app
     
-    env.IMAGE = 'ooghenekaro/amazon'
+    env.IMAGE = 'mxqeett/amazon'
 
     stage('Clone repository') {
-             git branch: 'main', url: 'https://github.com/ooghenekaro/argocd-amazon-manifest.git'  
+             git branch: 'main', url: 'https://github.com/mxqeett/argocd-amazon-manifest.git'  
     }
 
     stage('Update GIT') {
